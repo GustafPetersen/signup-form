@@ -33,22 +33,23 @@
             <div class="formcontainer">
                 <form>
                     <label for="firstname">First Name
-                        <input type="text" class="name" id="firstname">
+                        <input type="text" class="name" id="firstname" required minlength="2" maxlength="12">
                     </label>
                     <label for="lastname">Last Name
-                        <input type="text" class="name" id="lastname">
+                        <input type="text" class="name" id="lastname" required minlength="2" maxlength="12">
                     </label>
                     <label for="email">Email
-                        <input type="email" class="email">
+                        <input type="email" class="email" required 
+                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
                     </label>
                     <label for="phonenumber">Phone Number
-                        <input type="tel" class="phonenumber">
+                        <input type="tel" class="phonenumber" required>
                     </label>
                     <label for="password">Password
-                        <input type="password" class="password">
+                        <input type="password" class="password" required minlength="9" maxlength="20">
                     </label>
                     <label for="confirm-password">Confirm Password
-                        <input type="password" id="confirm-password">
+                        <input type="password" id="confirm-password" required minlength="9" maxlength="20">
                     </label>
 
                 </form>

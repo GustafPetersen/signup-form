@@ -136,16 +136,24 @@ input {
     margin: 2%;
     padding: 2%;
     border: 1.125px lightgrey solid;
-    border-radius: 5px;
+    border-radius: 7.5px;
     flex: 1 1 auto;
-}
-input:hover {
-    border: 2px #b7731a;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 input:focus {
-    box-shadow: 2px black;
-    border: 1.125px #b7731a;
+    box-shadow: 2px 2px 5px 2px rgba(228, 150, 41, 0.632) inset;
+    outline: none;
+}
+
+input:valid {
+    border-color: rgb(95, 158, 0);
+}
+input:invalid {
+    border-color: rgb(214, 134, 22);
 }
 
 .signup-login {
